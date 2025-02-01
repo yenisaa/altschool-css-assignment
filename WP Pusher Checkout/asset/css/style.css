@@ -1,0 +1,404 @@
+/* CSS RESET  */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Lato", sans-serif;
+}
+
+/* Root Styles */
+:root {
+  --primary-color: #1179bf;
+  --secondary-color: #038e7d;
+  --bg-color: #f5f8fa;
+  --text-color: #1d2c3c;
+  --accent-color: #e0e6ea;
+}
+
+/* Header & Nav Stylings */
+header nav {
+  border-bottom: 2px solid var(--accent-color);
+  font-weight: 550;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 40px;
+
+  & a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+}
+
+header nav :nth-child(5) {
+  border: 2px solid #646e7a;
+  border-radius: 5px;
+  padding: 10px;
+}
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Logo  */
+header img {
+  width: 200px;
+  height: 39px;
+  margin: 20px;
+}
+
+/* Container Styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Flex Item 2 Edits*/
+
+.flex-item-1 {
+  background: white;
+  box-shadow: 1px 1px 8px var(--accent-color);
+  min-height: 680px;
+  min-width: 500px;
+  padding: 20px;
+  border-radius: 5px 0 0 5px;
+}
+
+.form-section {
+  border-top: 1px solid var(--accent-color);
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.names {
+  display: flex;
+  gap: 10px;
+}
+
+.fname {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.lname {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  gap: 10px;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.payment {
+  border-top: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.payment-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+input {
+  background-color: var(--accent-color);
+  padding: 10px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+}
+input:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-button button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  color: var(--bg-color);
+  font-weight: 600;
+}
+
+.footer-paragraph {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+  gap: 10px;
+  width: 100%;
+
+  & span {
+    color: #666;
+  }
+}
+
+.footer-p {
+  font-weight: bold;
+  width: 60%;
+}
+
+.sponsor {
+  margin: 10px 0;
+  align-self: center;
+}
+
+/* Flex Item 2 Edits*/
+
+.flex-item-2 {
+  background: var(--primary-color);
+  box-shadow: 1px 1px 8px var(--accent-color);
+  min-height: 680px;
+  min-width: 350px;
+  padding: 30px;
+  border-radius: 0 5px 0 0;
+  color: var(--bg-color);
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 0 15px 0;
+
+  .rate {
+    display: flex;
+
+    & :nth-child(2) {
+      font-size: 4rem;
+      font-weight: 100;
+    }
+
+    & :nth-child(3) {
+      align-self: end;
+    }
+  }
+
+  .price-content {
+    width: 10rem;
+  }
+}
+
+.utilities {
+  margin: 30px 0;
+  width: 100%;
+
+  .flex-item {
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+  }
+}
+
+.cta {
+  margin: 30px 0;
+  border-bottom: 2px solid rgba(11, 247, 255, 0.2);
+
+  & :nth-child(2) {
+    font-weight: 700;
+    border-bottom: 3px solid rgba(11, 247, 255, 0.4);
+    width: 79%;
+    margin: 5px 0 30px 0;
+  }
+}
+
+.testimonial {
+  width: 200px;
+
+  & p {
+    margin: 20px 0;
+    font-style: italic;
+
+    & span {
+      font-weight: 700;
+    }
+  }
+
+  .reviewer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+footer .copyright-info span {
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+/* Responsive Design for Mobile Phone*/
+
+/* Smart Watches and XX Small Screen Sizes Start*/
+
+@media only screen and (max-width: 318px) {
+  body {
+    display: none;
+  }
+}
+/* XX Small Screen Sizes End */
+
+/* Normal Screen Sizes Start */
+@media screen and (min-width: 320px) and (max-width: 420px) {
+  .header-wrappe nav {
+    flex-direction: column;
+    justify-content: center;
+
+    & ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-item-1 {
+    flex-direction: column;
+    min-width: 300px;
+
+    .title {
+      display: flex;
+
+      & img {
+        width: 70px;
+      }
+    }
+    form > .names {
+      display: block;
+    }
+
+    .footer-paragraph .footer-p {
+      width: 80%;
+    }
+  }
+
+  .flex-item-2 {
+    border-radius: 0 0 0 5px;
+    min-width: 300px;
+  }
+}
+
+/* Screen In-between Normal and tablet sizes */
+@media screen and (min-width: 421px) and (max-width: 767px) {
+  .header-wrappe nav {
+    flex-direction: column;
+    justify-content: center;
+
+    & ul {
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-item-1 {
+    flex-direction: column;
+    min-width: 300px;
+
+    .title {
+      display: flex;
+
+      & img {
+        width: 70px;
+      }
+    }
+    form > .names {
+      display: block;
+    }
+  }
+
+  .flex-item-2 {
+    border-radius: 0 0 0 5px;
+    min-width: 400px;
+  }
+}
+/* Small Screen Sizes End */
+
+/* For Mobile Landscape View */
+@media only screen and (min-device-width: 320px) and (max-device-height: 400px) and (orientation: landscape) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Responsive Design for Tablets*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-item-1 {
+    min-width: 400px;
+  }
+
+  .flex-item-2 {
+    min-width: 300px;
+  }
+}

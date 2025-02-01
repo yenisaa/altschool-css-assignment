@@ -1,0 +1,166 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --primary-color: #a7a8cd;
+  --secondary-color: #FDF1B5;
+  --accent-color:#E5E7EB;
+}
+
+body{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: var(--primary-color);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100vw;
+  border: 10px solid var(--accent-color);
+}
+
+.wrapper{
+  box-shadow: 1px 1px 8px #7f809b;
+  border-radius: 15px;
+}
+
+h3{
+  background-color: var(--secondary-color);
+  border-radius: 5px 25px 25px 5px;
+  margin: 0 0 -45px -10px;
+  padding: 5px 10px;
+  position: relative;
+  width: 200px;
+  z-index: 1;
+}
+
+p{
+  font-size: 1.3rem;
+  padding: 20px;
+  width: 500px;
+}
+
+
+.card-image{
+  width: 500px;
+  background: #fff;  
+}
+
+.card-description{
+  border-radius: 0 0 15px 15px;
+  width: 500px;
+  background: #fff;  
+}
+
+.card-description .heading{
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 20px 0 0 20px;
+
+  span{
+    color: #666666;
+    font-size: 1.2rem;
+  }
+}
+
+img{
+  border-radius: 10px 10px 0 0;
+  width: 500px;
+  height: 300px;
+
+}
+
+/* Large Screen */
+
+@media screen and (min-width:461px) {
+  header{display: none;}
+}
+
+/* For Small Screen */
+
+@media screen and (min-width:320px) and (max-width:460px) {
+  header{
+    display: none;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 10px solid var(--accent-color);
+  }
+  
+  .wrapper{
+    box-shadow: 1px 1px 8px #7f809b;
+    border-radius: 15px;
+  }
+  h3{
+    background-color: var(--secondary-color);
+    border-radius: 5px 25px 25px 5px;
+    margin: 0 0 -45px -10px;
+    padding: 5px 10px;
+    position: relative;
+    width: 200px;
+    z-index: 1;
+  }
+  
+  p{
+    font-size: 1.3rem;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  
+  .card-image{
+    width: 300px;
+    background: #fff;  
+  }
+  
+  .card-description{
+    border-radius: 0 0 15px 15px;
+    width: 300px;
+    background: #fff;  
+  }
+  
+  .card-description .heading{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 20px 0 0 20px;
+  
+    span{
+      color: #666666;
+      font-size: 1.2rem;
+    }
+  }
+  
+  img{
+    border-radius: 10px 10px 0 0;
+    width: 300px;
+    height: 200px;
+  
+  }
+}
+
+/* For Smart Watches */
+
+@media screen and (max-width:200px) {
+  header{
+    margin: auto;
+    text-align: center;
+  }
+  section{
+    display: none;
+  }
+}
